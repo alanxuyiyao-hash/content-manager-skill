@@ -1,0 +1,52 @@
+{
+  "name": "content-manager",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --host",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "icons": "node scripts/gen-icons.mjs",
+    "cap:sync": "npm run build && cap sync android",
+    "android:preflight": "sh android/scripts/verify-jdk21.sh",
+    "android:build": "npm run android:preflight && npm run cap:sync && cd android && ./gradlew assembleDebug",
+    "test:android-layout": "playwright test tests/android-layout.spec.ts",
+    "test:iphone-air-layout": "playwright test tests/iphone-air-layout.spec.ts"
+  },
+  "dependencies": {
+    "@capacitor/android": "8.6.0",
+    "@capacitor/app": "8.1.1",
+    "@capacitor/core": "8.6.0",
+    "@capacitor/filesystem": "8.1.2",
+    "@capacitor/share": "8.0.1",
+    "@react-spring/web": "^10.1.2",
+    "@supabase/supabase-js": "^2.108.1",
+    "date-fns": "^4.1.0",
+    "dexie": "^4.0.11",
+    "dexie-react-hooks": "^1.1.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "4.0.0",
+    "@capacitor/cli": "8.6.0",
+    "@resvg/resvg-js": "^2.6.2",
+    "@types/node": "22.20.5",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "5.2.0",
+    "playwright": "^1.60.0",
+    "typescript": "^5.6.3",
+    "vite": "7.3.7",
+    "vite-plugin-pwa": "2.0.0",
+    "vitest": "4.1.12"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

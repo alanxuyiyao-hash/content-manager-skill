@@ -1,0 +1,4 @@
+interface:
+  display_name: "Content Manager 内容管家"
+  short_description: "生成保留原版暖纸风格、内容排期与商单收支功能的自媒体管理应用"
+  default_prompt: "使用 $content-manager 生成一个保留模板样式和功能的自媒体管理工具。"

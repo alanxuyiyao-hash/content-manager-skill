@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- A11y (WCAG 1.4.4)：不锁缩放 —— 允许用户放大页面。iOS 聚焦时自动放大已由全局 input{font-size:16px} 消除，无需 user-scalable=no -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Content Manager" />
+    <!-- #efede6 = el 皮肤页底 --el-bg 字面值（安卓状态栏实色，须与页底一致；同步 vite manifest / styles.css .app::before） -->
+    <meta name="theme-color" content="#efede6" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <!-- 展示/正文字体（Fontshare 官方 CDN，见 styles.css @font-face）：预加载首屏关键字重，减少 FOUT -->
+    <link rel="preload" as="font" type="font/woff2" href="https://cdn.fontshare.com/wf/FPDAZ2S6SW4QMSRIIKNNGTPM6VIXYMKO/5HNPQ453FRLIQWV2FNOBUU3FKTDZQVSG/Z3MGHFHX6DCTLQ55LJYRJ5MDCZPMFZU6.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="https://cdn.fontshare.com/wf/3RZHWSNONLLWJK3RLPEKUZOMM56GO4LJ/BPDRY7AHVI3MCDXXVXTQQ76H3UXA63S3/SB2OEB6IKZPRR6JT4GFJ2TFT6HBB6AZN.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="https://cdn.fontshare.com/wf/MFQT7HFGCR2L5ULQTW6YXYZXXHMPKLJ3/YWQ244D6TACUX5JBKATPOW5I5MGJ3G73/7YY3ZAAE3TRV2LANYOLXNHTPHLXVWTKH.woff2" crossorigin />
+    <title>Content Manager</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

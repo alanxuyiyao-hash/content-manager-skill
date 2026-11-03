@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Content Manager">
+  <!-- 暖白圆角底 -->
+  <rect width="512" height="512" rx="116" fill="#EFEDE6"/>
+  <!-- 内容卡片（镜片后方的纸张/条目） -->
+  <rect x="150" y="120" width="212" height="150" rx="34" fill="none" stroke="#1C1B19" stroke-width="20"/>
+  <g stroke="#1C1B19" stroke-width="14" stroke-linecap="round">
+    <line x1="188" y1="162" x2="300" y2="162"/>
+    <line x1="188" y1="196" x2="270" y2="196"/>
+  </g>
+  <!-- 眼镜（主体标识）：暖白填充镜片，压在卡片下缘 -->
+  <g fill="#EFEDE6" stroke="#1C1B19" stroke-width="22" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="96" y="250" width="150" height="132" rx="40"/>
+    <rect x="266" y="250" width="150" height="132" rx="40"/>
+  </g>
+  <g fill="none" stroke="#1C1B19" stroke-width="22" stroke-linecap="round">
+    <path d="M246 288 h20"/>
+    <path d="M96 300 l-22 -10"/>
+    <path d="M416 300 l22 -10"/>
+  </g>
+  <!-- 左镜片内的两个列表条目 -->
+  <g fill="#1C1B19">
+    <circle cx="140" cy="300" r="9"/>
+    <circle cx="140" cy="336" r="9"/>
+  </g>
+  <g stroke="#1C1B19" stroke-width="12" stroke-linecap="round">
+    <line x1="164" y1="300" x2="212" y2="300"/>
+    <line x1="164" y1="336" x2="212" y2="336"/>
+  </g>
+  <!-- 右镜片内的青绿箭头 ↗（呼应 logo 强调色） -->
+  <g fill="none" stroke="#2A8C7C" stroke-width="18" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M310 348 L360 298"/>
+    <path d="M334 296 L362 296 L362 324"/>
+  </g>
+</svg>

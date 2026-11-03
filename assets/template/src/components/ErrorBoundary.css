@@ -1,0 +1,28 @@
+/* 错误兜底卡：单独 CSS，避免改动 styles.css 造成合并冲突 */
+.err-boundary {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: #f4f3ef;
+}
+.err-card {
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
+}
+.err-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+.err-msg {
+  margin: 0 0 6px;
+  color: #8a8a8a;
+  font-size: 14px;
+  line-height: 1.5;
+}

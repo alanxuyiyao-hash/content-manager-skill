@@ -1,0 +1,52 @@
+/* 登录门：单独 CSS，避免改动 styles.css 造成合并冲突 */
+.auth-screen {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: #f5f5f7;
+  z-index: 1000;
+}
+.auth-card {
+  width: 100%;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #fff;
+  border-radius: 18px;
+  padding: 28px 22px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+.auth-card h1 {
+  margin: 0;
+  font-size: 22px;
+  text-align: center;
+}
+.auth-sub {
+  margin: 0 0 6px;
+  text-align: center;
+  color: #888;
+  font-size: 13px;
+}
+.auth-card input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid #e2e2e6;
+  border-radius: 12px;
+  font-size: 16px;
+  background: #fafafa;
+}
+.auth-card input:focus {
+  outline: none;
+  border-color: #111;
+  background: #fff;
+}
+.auth-err {
+  margin: 0;
+  color: #d33;
+  font-size: 13px;
+  text-align: center;
+}
