@@ -14,13 +14,13 @@
 
 ## 安装 Skill
 
-将这个完整目录放到支持 Agent Skills 的工具的技能目录。Codex 的个人技能目录为 `~/.codex/skills/content-manager/`，核心文件 `SKILL.md` 应在该目录根部；不要只复制 Markdown 而遗漏 `assets/template/`。
+将这个完整目录放到支持 Agent Skills 的工具的技能目录。例如 `~/.agents/skills/content-manager/`（实际位置按所用工具的约定调整），核心文件 `SKILL.md` 应在该目录根部；不要只复制 Markdown 而遗漏 `assets/template/`。
 
-直接从 GitHub 安装到 Codex（目标目录需不存在）：
+直接从 GitHub 安装（以下使用示例技能目录，目标目录需不存在）：
 
 ```bash
-mkdir -p ~/.codex/skills
-git clone https://github.com/alanxuyiyao-hash/content-manager-skill.git ~/.codex/skills/content-manager
+mkdir -p ~/.agents/skills
+git clone https://github.com/alanxuyiyao-hash/content-manager-skill.git ~/.agents/skills/content-manager
 ```
 
 在新的对话中调用。更新时可在该目录执行 `git pull --ff-only`。
